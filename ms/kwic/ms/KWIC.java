@@ -110,6 +110,13 @@ public class KWIC{
  */
 
   private int[][] alphabetized_;
+  
+  
+//data presentation change
+  private char[] circular_chars_;
+  private int circular_len_;
+  private int[] shift_index_;
+  private int shift_len_;
 
 //----------------------------------------------------------------------
 /**
@@ -308,7 +315,78 @@ public class KWIC{
       
     }
   }
-
+  
+  private void check_buffer_and_adjust(){
+	  
+	int buffer_len = circular_chars_.length;
+	if ( circular_len_ >= buffer_len ){
+		
+		char[] tmp = new char[buffer_len + 256];
+		System.arraycopy(circular_chars_, 0, tmp, 0, buffer_len);
+		circular_chars_= tmp;
+	}	  
+  }
+  
+  private void write_circular( char c ){
+	  
+	check_buffer_and_adjust();
+	circular_chars_[circular_len_] = c;   			
+	circular_len_++;	  
+  }
+  
+  public void circularShift_new(){
+	  
+	circular_chars_ = new char[256];
+	circular_len_ = 0;
+	shift_index_= new int[256];
+	shift_len_ = 0;
+	 
+    for(int i = 0; i < line_index_.length; i++){
+    	
+    	int line_start = line_index_[i];
+    	int line_end = (i == line_index_.length -1) ? chars_.length : line_index_[i+1];
+    	int shift_start = line_start;
+    	 	
+    	while ( shift_start < line_end ){
+    		
+        	boolean next_start_found = false;
+        	int next_start = 0;
+    		
+    		shift_index_[shift_len_] = circular_len_;
+    		shift_len_ ++;
+		
+    		int k;
+    		for ( k = shift_start ; k < line_end; k++ ){
+    			
+    			char c = chars_[k];
+    			write_circular(c);
+    			
+    			if ( !next_start_found && c== ' '){
+    				
+    				next_start = k+1;
+    				next_start_found = true;
+    			} 			
+    		}
+    		
+    		if (!next_start_found ){
+    			
+    			next_start = k;
+    		}
+    		
+    		if ( line_start < shift_start ){
+    			
+    			write_circular(' ');
+	    		for ( k = line_start ; k < shift_start -1 ; k++ ){
+	    			
+	    			char c = chars_[k];
+	    			write_circular(c);			
+	    		}
+    		}
+    		
+    		shift_start = next_start;
+    	}
+    }	  
+  }
 //----------------------------------------------------------------------
 /**
  * circularShift function processes the two arrays prepared by input function.
@@ -419,6 +497,42 @@ public class KWIC{
  * integer array int[][] alphabetized_.
  * @return void
  */
+  private int compare_data( char[] current_shift , char[] mid_line ){
+	  
+	      // find the smaller number of characters between mid and current shift
+	  int length = (current_shift.length < mid_line.length) 
+	               ? current_shift.length : mid_line.length;
+	  
+	      // comparison flag
+	      // if two lines are identical: compared = 0
+	      // if the first line is greater than the second one: compared = 1
+	      // if the first line is smaller than the second one: compared = -1
+	  int compared = 0;
+	
+	      // compare the lines alphabetically
+	      // comparision is case sensitive, i.e., upper cases are considered
+	      // greater than lower cases
+	  for(int j = 0; j < length; j++){
+	    if(current_shift[j] > mid_line[j]){
+	      compared = 1;
+	      break;
+	    }else if(current_shift[j] < mid_line[j]){
+	      compared = -1;
+	      break;
+	    }
+	  }
+	  
+	      // if compared == 0 check if the lines have the equal length
+	      // the line that has greater length is greater than the other line
+	  if(compared == 0){
+	    if(current_shift.length < mid_line.length)
+	      compared = -1;
+	    else if(current_shift.length > mid_line.length)
+	      compared = 1;
+	  }
+    
+	  return compared;
+  }
 
   public void alphabetizing(){
     
@@ -520,38 +634,7 @@ public class KWIC{
       }else
         System.arraycopy(chars_, mid_line_start, mid_line, 0, mid_line_end - mid_line_start);
 
-            // find the smaller number of characters between mid and current shift
-        int length = (current_shift.length < mid_line.length) 
-                     ? current_shift.length : mid_line.length;
-        
-            // comparison flag
-            // if two lines are identical: compared = 0
-            // if the first line is greater than the second one: compared = 1
-            // if the first line is smaller than the second one: compared = -1
-        int compared = 0;
-
-            // compare the lines alphabetically
-            // comparision is case sensitive, i.e., upper cases are considered
-            // greater than lower cases
-        for(int j = 0; j < length; j++){
-          if(current_shift[j] > mid_line[j]){
-            compared = 1;
-            break;
-          }else if(current_shift[j] < mid_line[j]){
-            compared = -1;
-            break;
-          }
-        }
-        
-            // if compared == 0 check if the lines have the equal length
-            // the line that has greater length is greater than the other line
-        if(compared == 0){
-          if(current_shift.length < mid_line.length)
-            compared = -1;
-          else if(current_shift.length > mid_line.length)
-            compared = 1;
-        }
-        
+      	int compared = compare_data(current_shift, mid_line);
         switch(compared){
         case 1: // i-th line greater
           low = mid + 1;
@@ -636,6 +719,7 @@ public class KWIC{
     }
     kwic.input(args[0]);
     kwic.circularShift();
+    kwic.circularShift_new();
     kwic.alphabetizing();
     kwic.output();
   }

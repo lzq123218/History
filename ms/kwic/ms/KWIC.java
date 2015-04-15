@@ -116,6 +116,8 @@ public class KWIC{
   private char[] circular_chars_;
   private int circular_len_;
   private int[] shift_index_;
+  private int[] shift_info_line_;
+  private int[] shift_info_offset_;
   private int shift_len_;
 
 //----------------------------------------------------------------------
@@ -339,7 +341,10 @@ public class KWIC{
 	circular_chars_ = new char[256];
 	circular_len_ = 0;
 	shift_index_= new int[256];
+	shift_info_line_ = new int[256];
+	shift_info_offset_= new int[256];
 	shift_len_ = 0;
+	int total = 0;
 	 
     for(int i = 0; i < line_index_.length; i++){
     	
@@ -353,8 +358,11 @@ public class KWIC{
         	int next_start = 0;
     		
     		shift_index_[shift_len_] = circular_len_;
+    		shift_info_line_[shift_len_] = i;
+    		shift_info_offset_[shift_len_] = shift_start;
     		shift_len_ ++;
-		
+    		total ++;
+    		
     		int k;
     		for ( k = shift_start ; k < line_end; k++ ){
     			
@@ -385,7 +393,11 @@ public class KWIC{
     		
     		shift_start = next_start;
     	}
-    }	  
+    }
+    
+    int[] tmp = new int[total];
+    System.arraycopy(shift_index_, 0, tmp, 0, total);
+    shift_index_ = tmp;
   }
 //----------------------------------------------------------------------
 /**
@@ -661,6 +673,84 @@ public class KWIC{
       alphabetized_count++;
     }
   }
+  
+  public void alphabetizing_new(){
+	  
+	  int len = shift_index_.length;  	  
+	  int[] sorted_start = new int[len];
+	  int[] sorted_end = new int[len];
+	  int[] sorted = new int[len];
+	  	  
+	  int sorted_len = 0;
+	  int current = -1;
+	  
+	  while ( sorted_len < len ){
+		  current ++;		  
+		  int start = shift_index_[current];
+		  int end =  (current < len -1) ? shift_index_[current +1]:circular_len_;
+		  char[] cur_str = new char [end -start];
+		  System.arraycopy(circular_chars_, start, cur_str, 0, end - start);
+		  
+		  int i  = 0;		  
+		  if ( sorted_len > 0 ){//find position to insert
+			  
+			  int low = 0;
+			  int high = sorted_len -1;
+			  int mid = 0;
+			  
+			  while( low <= high){
+				  
+				  mid = (low + high)/2;
+				  
+				  char[] mid_str = new char[sorted_end[mid]- sorted_start[mid]];
+				  System.arraycopy(circular_chars_, sorted_start[mid], mid_str, 0, sorted_end[mid]- sorted_start[mid]);
+				  
+				  int res = compare_data( cur_str, mid_str);
+				  
+				  switch(res){
+				  case 1: // i-th line greater
+					  low = mid + 1;
+					  break;
+				  case -1: // i-th line smaller
+					  high = mid - 1;
+					  break;
+				  default: // i-th line equal
+					  low = mid;
+					  high = mid - 1;
+					  break;
+				  }
+			  }
+			  
+			  if ( low > sorted_len -1 ){
+				  
+				  i = sorted_len;				  
+	  
+			  }else{//???
+				  
+				  System.arraycopy(sorted_start, low, sorted_start, low + 1, sorted_len -low);
+				  System.arraycopy(sorted_end, low, sorted_end, low +1, sorted_len -low );
+				  System.arraycopy(sorted, low, sorted, low +1, sorted_len -low );
+				  i = low;			  
+			  }		  
+		  }
+		  
+		  sorted_start[i] = start;
+		  sorted_end[i] = end;
+		  sorted[i] = current;
+		  sorted_len ++;	  
+	  }
+	  
+	  alphabetized_ = new int[2][len];
+	  //convert to alphabetized_
+	  
+	  for ( int i = 0; i < sorted_len; i ++ ){
+		  
+		  int k = sorted[i];
+		  alphabetized_[0][i] = shift_info_line_[k];
+		  alphabetized_[1][i] = shift_info_offset_[k];
+	  }
+	  	  
+  }
 
 //----------------------------------------------------------------------
 /**
@@ -720,7 +810,8 @@ public class KWIC{
     kwic.input(args[0]);
     kwic.circularShift();
     kwic.circularShift_new();
-    kwic.alphabetizing();
+    kwic.alphabetizing_new();
+    //kwic.alphabetizing();
     kwic.output();
   }
 

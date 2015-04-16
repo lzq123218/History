@@ -751,6 +751,54 @@ public class KWIC{
 	  }
 	  	  
   }
+  
+  private char get_first_char(int i){
+	  
+	  char c = 0;
+	  if ( i < circular_shifts_[0].length ){
+		  
+		  //int line = line_index_[circular_shifts_[0][i]];
+		  int offset = circular_shifts_[1][i];
+		  
+		  c = chars_[offset];		  
+	  }
+	  return c;
+  }
+  
+  public void filter(){
+
+	  int len = circular_shifts_[0].length;
+
+	  for(int i = len-1; i >= 0; i-- ){
+
+		  char c = get_first_char(i);
+
+		  if ((c >= '0')&&(c <= '9')){
+			  
+			  int cnt_to_move = len -i -1;
+
+			  if ( cnt_to_move > 0 ){
+				  
+				  for ( int k = 0; k <2 ; k++ ){
+
+					  System.arraycopy(circular_shifts_[k], i+1, circular_shifts_[k], i, cnt_to_move);
+				  }
+			  }	
+			  len--;
+		  }
+	  }
+	  if ( len !=  circular_shifts_[0].length ){
+		  
+		  int[][] tmp = new int [2][len];
+
+		  for ( int k = 0; k <2 ; k++ ){
+
+			  System.arraycopy(circular_shifts_[k], 0, tmp[k], 0, len);
+		  }
+		  circular_shifts_ = tmp;
+	  }
+  }  
+  
 
 //----------------------------------------------------------------------
 /**
@@ -802,17 +850,22 @@ public class KWIC{
  */
 
   public static void main(String[] args){
+	  
     KWIC kwic = new KWIC();
     if(args.length != 1){
       System.err.println("KWIC Usage: java kwic.ms.KWIC file_name");
       System.exit(1);
     }
+    
     kwic.input(args[0]);
     kwic.circularShift();
+    kwic.filter();
+    kwic.alphabetizing();
+    kwic.output();
+    
     kwic.circularShift_new();
     kwic.alphabetizing_new();
-    //kwic.alphabetizing();
-    kwic.output();
+    kwic.output();   
   }
 
 //----------------------------------------------------------------------

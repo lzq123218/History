@@ -74,6 +74,42 @@ public class CircularShifter{
  */
 //----------------------------------------------------------------------
 
+  public void makeShifts( Line line){
+	  
+	  if (shifts_ == null)
+		  shifts_ = new LineStorage();
+	  
+	  if ( line != null ){
+		  
+		  int len = line.size();
+		  
+		  for(int j = 0; j < len; j++){
+
+			  shifts_.addEmptyLine();
+
+			  for(int k = j; k < (len + j); k++)
+				  shifts_.addWord(line.get(k % len), shifts_.getLineCount() - 1);
+		  }		  		  
+	  }	  	  
+  }
+  
+  private void processLine( String[] line){
+	  
+	  // iterate through all words of the current line
+	  for(int j = 0; j < line.length; j++){
+
+		  // add a new empty line for the current shift
+		  shifts_.addEmptyLine();
+
+		  // add all words of the current shift
+		  for(int k = j; k < (line.length + j); k++)
+
+			  // add current word to the last line
+			  // index is the remainder of dividing k and line.length
+			  shifts_.addWord(line[k % line.length], shifts_.getLineCount() - 1);
+
+	  }
+  }
 //----------------------------------------------------------------------
 /**
  * Produces all circular shifts of lines in a given set. Circular shifts
@@ -98,23 +134,8 @@ public class CircularShifter{
     for(int i = 0; i < lines.getLineCount(); i++){
       
           // current line
-      String[] line = lines.getLine(i);
-      
-          // iterate through all words of the current line
-      for(int j = 0; j < line.length; j++){
-        
-            // add a new empty line for the current shift
-        shifts_.addEmptyLine();
-        
-            // add all words of the current shift
-        for(int k = j; k < (line.length + j); k++)
-
-              // add current word to the last line
-              // index is the remainder of dividing k and line.length
-          shifts_.addWord(line[k % line.length], shifts_.getLineCount() - 1);
-
-      }
-      
+      String[] line = lines.getLine(i);    
+      processLine( line);    
     }
   }
 

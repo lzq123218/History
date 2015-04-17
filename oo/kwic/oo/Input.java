@@ -80,7 +80,55 @@ public class Input{
  *
  */
 //----------------------------------------------------------------------
+	
+ public void readLine( String line, CircularShifter shifter){
+	 
+	 Line res = processLine( line);
+	 if( res != null ){
+		 shifter.makeShifts(res);
+	 }
+ }
+	
+ private Line processLine( String line ){
+	 
+	 Line ret = null;
+	
+	 // parse the line
+	 // the default delimiter set for StringTokenizer
+	 // is the set " \t\n\r\f" of characters
+	 // (Note that the delimiter characters are not
+	 // themselves treated as tokens)
+	 StringTokenizer tokenizer = new StringTokenizer(line);
 
+	 // if this is not an empty line add a new empty line
+	 // to the line storage
+	 if(tokenizer.countTokens() > 0){
+		 ret = new Line();
+
+		 // add all words from this line to the last line
+		 while(tokenizer.hasMoreTokens())
+			 ret.add(tokenizer.nextToken());
+		 
+	 }
+		 
+	 return ret; 
+ }	
+
+ public void parseLine( String line, LineStorage line_storage){
+	 
+	 Line res = processLine( line);
+
+	 if ( res != null ){
+		 
+		 line_storage.addEmptyLine();
+		 
+		 for (int i = 0; i < res.size(); i++ ){
+
+			 String str = res.get(i);
+			 line_storage.addWord( str, line_storage.getLineCount() - 1);
+		 }		
+	 }
+ }
 //----------------------------------------------------------------------
 /**
  * This method reads and parses a KWIC input file. If an I/O exception occurs
@@ -102,24 +150,9 @@ public class Input{
       String line = reader.readLine();
       while(line != null){
         
-            // parse the line
-            // the default delimiter set for StringTokenizer
-            // is the set " \t\n\r\f" of characters
-            // (Note that the delimiter characters are not
-            // themselves treated as tokens)
-        StringTokenizer tokenizer = new StringTokenizer(line);
-        
-            // if this is not an empty line add a new empty line
-            // to the line storage
-        if(tokenizer.countTokens() > 0)
-          line_storage.addEmptyLine();
-
-            // add all words from this line to the last line
-        while(tokenizer.hasMoreTokens())
-          line_storage.addWord(tokenizer.nextToken(), line_storage.getLineCount() - 1);
-        
-            // read next line
-        line = reader.readLine();
+    	  parseLine( line, line_storage);       
+    	  // read next line
+    	  line = reader.readLine();
       }
       
     }catch(FileNotFoundException exc){

@@ -25,6 +25,10 @@
 
 package kwic.oo;
 
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /*
  * $Log$
 */
@@ -111,7 +115,67 @@ public class KWIC{
         // print sorted shifts
     output.print(alphabetizer);
   }
+  
+  private String getLine(BufferedReader br){
+	  
+	String ret = "";
+	  
+  	try {
+		ret = br.readLine();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+  	return ret;
+  }
+  
+  public void interactive(){
+	  
+	Input input = new Input();
+    CircularShifter shifter = new CircularShifter();
+    Alphabetizer alphabetizer = new Alphabetizer();
+    Output output = new Output();
+    
+    String test = new String("zza zzb zzc zzd");
+    input.readLine( test, shifter);
+    
+    alphabetizer.alpha(shifter);
+    output.print(alphabetizer);
 
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	boolean updated = false;
+	
+	while (true){
+
+		System.out.print("Add, Print, Quit:");
+
+		String inputStr = getLine(br);
+
+		if ( inputStr.equals("a") ){
+
+			System.out.print(">");
+			inputStr = getLine(br);
+			if (!inputStr.equals("")){
+
+				input.readLine( inputStr, shifter);
+				updated = true;
+			}
+
+		}else if ( inputStr.equals("p") ){
+
+			if (updated){
+				alphabetizer.alpha(shifter);
+				updated = false;
+			}
+
+			output.print(alphabetizer);
+
+		}else if ( inputStr.equals("q") ){    		
+			break;
+		}
+
+	}	  
+  }
 //----------------------------------------------------------------------
 /**
  * Main function checks the command line arguments. The program expects 
@@ -132,6 +196,7 @@ public class KWIC{
 
     KWIC kwic = new KWIC();
     kwic.execute(args[0]);
+    kwic.interactive();
   }
 
 //----------------------------------------------------------------------

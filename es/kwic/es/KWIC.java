@@ -25,6 +25,10 @@
 
 package kwic.es;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /*
  * $Log$
 */
@@ -106,6 +110,71 @@ public class KWIC{
  * Methods
  *
  */
+	private String getLine(BufferedReader br){
+
+		String ret = "";
+
+		try {
+			ret = br.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return ret;
+	}
+	
+  private boolean interactive(){
+	  
+	  LineStorageWrapper lines = new LineStorageWrapper();
+	  LineStorageWrapper shifts = new LineStorageWrapper();
+	
+	  Input input = new Input();
+	  CircularShifter shifter = new CircularShifter(shifts);
+	  lines.addObserver(shifter);
+	
+	  Alphabetizer alphabetizer = new Alphabetizer();
+	  shifts.addObserver(alphabetizer);
+	
+	  Output output = new Output();
+	  
+	  //input.parse(file, lines);
+	  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
+	  while (true){
+
+		  System.out.print("Add, Delete, Print, Quit:");
+
+		  String inputStr = getLine(br);
+
+		  if ( inputStr.equals("a") ){
+
+			  System.out.print(">");
+			  inputStr = getLine(br);
+			  if (!inputStr.equals("")){
+
+				  input.processLine( inputStr, lines);
+			  }
+			  
+		  }else if ( inputStr.equals("d") ){
+			  
+			  System.out.print(">");
+			  inputStr = getLine(br);
+			  if (!inputStr.equals("")){
+
+				  lines.deleteLine( inputStr);
+			  }
+			  
+		  }else if ( inputStr.equals("p") ){
+
+			  output.print(shifts);
+
+		  }else if ( inputStr.equals("q") ){
+			  
+			  break;
+		  }
+	  }
+  
+	  return true;
+  }
 //----------------------------------------------------------------------
 
 //----------------------------------------------------------------------
@@ -169,6 +238,7 @@ public class KWIC{
 
     KWIC kwic = new KWIC();
     kwic.execute(args[0]);
+    kwic.interactive();
   }
 
 //----------------------------------------------------------------------

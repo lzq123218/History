@@ -63,6 +63,8 @@ public class LineStorageWrapper extends Observable{
  */
 
   private LineStorage lines_ = new LineStorage();
+  
+  private String[] line_deleted_ = null;
 
 //----------------------------------------------------------------------
 /**
@@ -78,6 +80,28 @@ public class LineStorageWrapper extends Observable{
  */
 //----------------------------------------------------------------------
 
+  public String[] getDeletedLine(){
+	  
+	  return line_deleted_;
+  }
+  private int findLine(String str){
+	  
+	  int index = -1;	  
+	  for ( int i = 0; i< lines_.getLineCount(); i++ ){
+		  
+		 String line = lines_.getLineAsString(i);
+		 
+		 if ( line.equals(str) ) index = i;
+	  }	  
+	  return index;
+  }
+  
+  public void deleteLine( String str){
+	  
+	  int index = findLine(str);
+	  if (index >= 0 )
+		  deleteLine(index);
+  }
 //----------------------------------------------------------------------
 /**
  * Adds a new line to this line storage wrapper. The line is added at the end
@@ -155,6 +179,8 @@ public class LineStorageWrapper extends Observable{
         // keep the line so we can create an event object
     String line = lines_.getLineAsString(index);
     
+    line_deleted_ = lines_.getLine(index);
+    
         // delete the line
     lines_.deleteLine(index);
     
@@ -167,6 +193,8 @@ public class LineStorageWrapper extends Observable{
 
         // send the event
     notifyObservers(event);
+    
+    line_deleted_ = null;
   }
 
 //----------------------------------------------------------------------

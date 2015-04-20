@@ -81,7 +81,34 @@ public class Input{
  *
  */
 //----------------------------------------------------------------------
-
+	public void processLine(String line, LineStorageWrapper line_storage){
+	
+		    // parse the line
+		    // the default delimiter set for StringTokenizer
+		    // is the set " \t\n\r\f" of characters
+		    // (Note that the delimiter characters are not
+		    // themselves treated as tokens)
+		StringTokenizer tokenizer = new StringTokenizer(line);
+		
+		    // if this is not an empty line keep the words so that we can add the line
+		    // to the line storage
+		if(tokenizer.countTokens() > 0){
+		  
+		      // keep the words
+		  ArrayList words = new ArrayList();          
+		  while(tokenizer.hasMoreTokens())
+		    words.add(tokenizer.nextToken());
+		      
+		      // create a String[] representation of the line
+		  String[] line_rep = new String[words.size()];
+		  for(int i = 0; i < line_rep.length; i++)
+		    line_rep[i] = (String) words.get(i);
+		    
+		      // add the new line to the storage
+		  line_storage.addLine(line_rep);
+		}
+	}
+	
 //----------------------------------------------------------------------
 /**
  * This method reads and parses a KWIC input file. If an I/O exception occurs
@@ -103,31 +130,7 @@ public class Input{
       String line = reader.readLine();
       while(line != null){
         
-            // parse the line
-            // the default delimiter set for StringTokenizer
-            // is the set " \t\n\r\f" of characters
-            // (Note that the delimiter characters are not
-            // themselves treated as tokens)
-        StringTokenizer tokenizer = new StringTokenizer(line);
-        
-            // if this is not an empty line keep the words so that we can add the line
-            // to the line storage
-        if(tokenizer.countTokens() > 0){
-          
-              // keep the words
-          ArrayList words = new ArrayList();          
-          while(tokenizer.hasMoreTokens())
-            words.add(tokenizer.nextToken());
-              
-              // create a String[] representation of the line
-          String[] line_rep = new String[words.size()];
-          for(int i = 0; i < line_rep.length; i++)
-            line_rep[i] = (String) words.get(i);
-            
-              // add the new line to the storage
-          line_storage.addLine(line_rep);
-        }
-        
+		processLine( line, line_storage);        
             // read next line
         line = reader.readLine();
       }

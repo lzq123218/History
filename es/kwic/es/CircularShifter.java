@@ -129,6 +129,21 @@ public class CircularShifter implements Observer{
         shifts_.addLine(line_rep);
       }
       break;
+    case LineStorageChangeEvent.DELETE:
+    	
+    	String[] line_deleted = lines.getDeletedLine();    	
+    	for(int i = 0; i < line_deleted.length; i++){
+
+    		// create a new empty shift and add all words to it
+    		String str = new String();
+    		for(int j = i; j < (line_deleted.length + i); j++){
+    			
+    			if (j != i ) str = str + " ";
+    			str =  str + (line_deleted[j % line_deleted.length]);
+    		}
+    		shifts_.deleteLine(str);
+    	}    	
+    	break;
     default:
       break;      
     }

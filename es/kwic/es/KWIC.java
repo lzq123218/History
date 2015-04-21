@@ -127,6 +127,9 @@ public class KWIC{
 	  
 	  LineStorageWrapper lines = new LineStorageWrapper();
 	  LineStorageWrapper shifts = new LineStorageWrapper();
+	  
+	  WordsIndex index = new WordsIndex();
+	  lines.addObserver(index);
 	
 	  Input input = new Input();
 	  CircularShifter shifter = new CircularShifter(shifts);
@@ -141,7 +144,7 @@ public class KWIC{
 	  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 	  while (true){
 
-		  System.out.print("Add, Delete, Print, Quit:");
+		  System.out.print("Add, Delete, Index, Print, Quit:");
 
 		  String inputStr = getLine(br);
 
@@ -167,8 +170,12 @@ public class KWIC{
 
 			  output.print(shifts);
 
-		  }else if ( inputStr.equals("q") ){
+		  }else if ( inputStr.equals("i") ){
 			  
+			  index.outPut();
+			  
+		  }else if ( inputStr.equals("q") ){
+			  			  
 			  break;
 		  }
 	  }

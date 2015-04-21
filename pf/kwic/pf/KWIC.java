@@ -86,12 +86,13 @@ public class KWIC{
  * @return void
  */
 
-  public void execute(String file){
+  public void execute(String file, String filterFile){
     try{
       
           // pipes
       Pipe in_cs = new Pipe();
-      Pipe cs_al = new Pipe();
+      Pipe cs_ft = new Pipe();
+      Pipe ft_al = new Pipe();
       Pipe al_ou = new Pipe();
       
           // input file
@@ -99,13 +100,16 @@ public class KWIC{
 
           // filters connected into a pipeline
       Input input = new Input(in, in_cs);
-      CircularShifter shifter = new CircularShifter(in_cs, cs_al);
-      Alphabetizer alpha = new Alphabetizer(cs_al, al_ou);
+      CircularShifter shifter = new CircularShifter(in_cs, cs_ft);
+      ShiftFilter filter = new ShiftFilter(cs_ft, ft_al);
+      Alphabetizer alpha = new Alphabetizer(ft_al, al_ou);
       Output output = new Output(al_ou);
       
+      filter.setFilter(filterFile);
           // run it
       input.start();
       shifter.start();
+      filter.start();
       alpha.start();
       output.start();
     }catch(IOException exc){
@@ -126,13 +130,13 @@ public class KWIC{
  */
 
   public static void main(String[] args){
-    if(args.length != 1){
-      System.err.println("KWIC Usage: java kwic.ms.KWIC file_name");
+    if(args.length != 2){
+      System.err.println("KWIC Usage: java kwic.ms.KWIC file_name filter_name");
       System.exit(1);
     }
 
     KWIC kwic = new KWIC();
-    kwic.execute(args[0]);
+    kwic.execute(args[0], args[1]);
   }
 
 //----------------------------------------------------------------------

@@ -8,6 +8,7 @@
 *.sln.docstates
 *.class
 .gitignore
+.gitattributes
 
 # Build results
 [Dd]ebug/

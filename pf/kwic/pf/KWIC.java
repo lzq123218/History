@@ -86,39 +86,98 @@ public class KWIC{
  * @return void
  */
 
-  public void execute(String file, String filterFile){
-    try{
-      
-          // pipes
-      Pipe in_lt = new Pipe();
-      Pipe lt_cs = new Pipe();
-      Pipe cs_ft = new Pipe();
-      Pipe ft_al = new Pipe();
-      Pipe al_ou = new Pipe();
-      
-          // input file
-      FileInputStream in = new FileInputStream(file);
+	public void execute(String file){
+		try{
 
-          // filters connected into a pipeline
-      Input input = new Input(in, in_lt);
-      LineTransformer lineTrans = new LineTransformer(in_lt, lt_cs);
-      CircularShifter shifter = new CircularShifter(lt_cs, cs_ft);
-      ShiftFilter filter = new ShiftFilter(cs_ft, ft_al);
-      Alphabetizer alpha = new Alphabetizer(ft_al, al_ou);
-      Output output = new Output(al_ou);
-      
-      filter.setFilter(filterFile);
-          // run it
-      input.start();
-      lineTrans.start();
-      shifter.start();
-      filter.start();
-      alpha.start();
-      output.start();
-    }catch(IOException exc){
-      exc.printStackTrace();
-    }
+			// pipes
+			Pipe in_cs = new Pipe();
+			Pipe cs_al = new Pipe();
+			Pipe al_ou = new Pipe();
+
+			// input file
+			FileInputStream in = new FileInputStream(file);
+
+			// filters connected into a pipeline
+			Input input = new Input(in, in_cs);
+			CircularShifter shifter = new CircularShifter(in_cs, cs_al);
+			Alphabetizer alpha = new Alphabetizer(cs_al, al_ou);
+			Output output = new Output(al_ou);
+
+			// run it
+			input.start();
+			shifter.start();
+			alpha.start();
+			output.start();
+		}catch(IOException exc){
+			exc.printStackTrace();
+		}
+	}
+  
+  public void testShiftFilter(String file, String filterFile){
+	  try{
+
+		  // pipes
+		  Pipe in_cs = new Pipe();
+		  Pipe cs_ft = new Pipe();
+		  Pipe ft_al = new Pipe();
+		  Pipe al_ou = new Pipe();
+
+		  // input file
+		  FileInputStream in = new FileInputStream(file);
+
+		  // filters connected into a pipeline
+		  Input input = new Input(in, in_cs);
+		  CircularShifter shifter = new CircularShifter(in_cs, cs_ft);
+		  ShiftFilter filter = new ShiftFilter(cs_ft, ft_al);
+		  Alphabetizer alpha = new Alphabetizer(ft_al, al_ou);
+		  Output output = new Output(al_ou);
+
+		  filter.setFilter(filterFile);
+		  // run it
+		  input.start();
+		  shifter.start();
+		  filter.start();
+		  alpha.start();
+		  output.start();
+	  }catch(IOException exc){
+		  exc.printStackTrace();
+	  }
   }
+
+  public void testLineTransformer(String file){
+	  try{
+
+		  // pipes
+		  Pipe in_lt = new Pipe();
+		  Pipe lt_cs = new Pipe();
+		  Pipe cs_ft = new Pipe();
+		  Pipe ft_al = new Pipe();
+		  Pipe al_ou = new Pipe();
+
+		  // input file
+		  FileInputStream in = new FileInputStream(file);
+
+		  // filters connected into a pipeline
+		  Input input = new Input(in, in_lt);
+		  LineTransformer lineTrans = new LineTransformer(in_lt, lt_cs);
+		  CircularShifter shifter = new CircularShifter(lt_cs, cs_ft);
+		  LineTransformer lineTrans2 = new LineTransformer(cs_ft, ft_al);
+		  Alphabetizer alpha = new Alphabetizer(ft_al, al_ou);
+		  Output output = new Output(al_ou);
+
+		  // run it
+		  input.start();
+		  lineTrans.start();
+		  shifter.start();
+		  lineTrans2.start();
+		  alpha.start();
+		  output.start();
+	  }catch(IOException exc){
+		  exc.printStackTrace();
+	  }
+  }
+  
+
 
 //----------------------------------------------------------------------
 /**
@@ -139,7 +198,12 @@ public class KWIC{
     }
 
     KWIC kwic = new KWIC();
-    kwic.execute(args[0], args[1]);
+    //kwic.execute(args[0]);
+   
+    //kwic.testShiftFilter(args[0], args[1]);
+   
+    kwic.testLineTransformer(args[0]);
+    
   }
 
 //----------------------------------------------------------------------

@@ -64,9 +64,9 @@ public class ShiftFilter extends Filter {
 	}
 
 	public void setFilter(String file){
+		if ( file == null) return;
 		try{
 
-			// open the file for reading
 			BufferedReader reader = new BufferedReader(new FileReader(file));
 
 			// read all lines until EOF occurs
@@ -75,7 +75,6 @@ public class ShiftFilter extends Filter {
 			while(line != null){
 
 				items_.add(line);
-				// read next line
 				line = reader.readLine();
 			}
 

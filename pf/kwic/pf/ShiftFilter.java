@@ -16,6 +16,7 @@ public class ShiftFilter extends Filter {
 		super(input, output);
 	}
 
+	//more efficient method like that in LineTransformer is candidate
 	protected void transform() {
 
 	    try{

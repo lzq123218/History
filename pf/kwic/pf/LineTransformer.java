@@ -26,7 +26,7 @@ public class LineTransformer extends Filter {
 	    	  char val = (char) c;
 
 	    	  // line has been read
-	    	  if( newLine &&((val >= 'A')||(val <= 'Z'))){
+	    	  if( newLine && (val >= 'A') && (val <= 'Z') ){
 	    		  collect = true;
 	    		  newLine = false;
 	    	  }

@@ -1,0 +1,505 @@
+org  2000h
+ljmp initi
+org 200bh
+ljmp int
+org 2030h
+    int: push psw
+	 PUSH A
+	 PUSH B
+	 mov a,20h;count
+	 clr c
+	 subb a,#9
+	 jz next;;;;;;;;;;;;;;;;
+	 inc 20h  ;count
+	 ljmp  reload
+next:    mov a,28h
+         anl a,#80h
+         jz aa
+         mov  a,28h
+         anl  a,#00000010b
+         jz aa
+         mov a,2ch
+         jz aa
+         dec 2ch   
+     aa: mov 20h,#0  ;count
+	 mov a,21h  ;second
+	 clr c
+	 subb a,#3bh;59
+	 jz bb
+	 inc 21h;secondf
+	 sjmp  reload
+     bb: mov 21h,#0 ;second
+	 mov a,22h;minute
+	 clr c
+	 subb a,#3bh;59
+	 jz cc
+	 inc 22h;minute
+	 sjmp  reload
+     cc: mov 22h,#0;minute
+	 mov a,23h;hour
+	 clr c
+	 subb a,#17h
+	 jz dd
+	 inc 23h;hour
+         sjmp reload
+     dd: mov 23h,#0;hour
+	 anl 28h,#11111110b;flag
+         orl 28h,#1;fqqlag
+ reload: clr tr0
+	 mov a,tl0
+	 add a,#0b0h
+	 mov tl0,a
+	 mov a,th0
+	 addc a,#3ch
+	 mov th0,a
+	 setb tr0
+	 mov a,28h;flag
+	 anl a,#1
+	 jz  i_over
+         push dph
+         push dpl
+	 mov dptr,#days;天数的首位13
+         mov a,25h;month
+         movc a,@a+dptr
+         pop dpl
+         pop dph
+	 clr c
+	 subb a,24h;date
+	 jz  ee
+	 inc 24h;date
+	 anl 28h,#11111110b;flag
+	 sjmp ring
+     ee: mov 24h,#1;date
+	 anl 28h,#11111110b;flag
+	 mov a,25h;month
+	 clr c
+	 subb a,#12
+	 jz  ff
+	 inc 25h;month
+	 sjmp ring
+     ff: mov 25h,#1;month
+	 mov a,26h;yearl
+	 subb a,#63h
+         jz gg
+         inc 26h;yearl
+         sjmp ring
+     gg: mov 26h,#0;yearl
+         inc 27h;yearh
+	 addc a,#0
+     nop ;lcall 计算平年闰年
+     nop ;修改2月份天数
+ring:nop;/判断是否星期天
+     nop ;决定是否打铃/
+     nop  ;call 计算ring
+i_over: POP B
+     POP A
+     pop psw
+     reti
+initi:    SETB PSW.3
+	  CLR  PSW.4
+           mov 20h,#0;count
+           mov 21h,#0;second
+	   mov 22h,#0;minute
+	   mov 23h,#0;hour
+           mov 24h,#1;date
+           mov 25h,#1;month
+           mov 26h,#0;yearl
+           mov 27h,#14h;yearh
+           MOV 28h,#80h;FLAG
+           mov 29h,#0;flash
+           mov 2ah,#1;item
+           mov 2bh,#0dh;input ;; 43h:enable 
+           mov  dptr,#0e003h
+           mov  a, #80h
+           movx @dptr, a     
+	   mov tmod,#1
+           mov ie,#82h
+           mov tl0,#0b0h
+	   mov th0,#3ch
+	   setb tr0
+start: lcall key_scan
+        jz  skip
+         lcall key_get
+         lcall core  
+skip:    lcall load
+         lcall mondify 
+         lcall control
+        lcall clocking
+       sjmp start
+control:push a
+        push b
+ mov 43h,#1;enable
+	 mov r2,#0
+FOR_R2: INC R2
+      MOV R3,#0
+      MOV R4,#10000000B
+FOR_R3: INC R3
+      XCH A,R4
+      RL,A
+      XCH,A,R4
+      MOV A,29h;flash
+      MOV B,r3
+      CJNE A,b,B1
+      MOV A,43h
+      JZ B2
+      MOV 43h,#0
+B1:   lCALL SHOW
+B2:   CJNE R3,#6,FOR_R3
+      CJNE R2,#10h,FOR_R2
+      pop b
+      pop a
+      RET   ;R3标明显示缓冲区第几个 显示驱动显示
+SHOW: PUSH A
+      MOV DPTR,#6000H
+      MOV A,R4 ; R4点亮码
+      MOVX @DPTR,A
+      MOV a,#78h; 显示缓冲
+      add A,R3;1<=(r3)<=6
+      MOV R0,A
+      mov a,@r0
+      ADD A,#0aH
+      MOVC A,@A+pc
+      MOV DPTR,#8000H
+      MOVX @DPTR,A
+      lcall delay
+      POP A
+      ret
+table :db 0c0h,0f9h,0a4h,0b0h,99h,92h,82h,0f8h,80h,90h,91h,0a1h,0deh,0ffh
+DELAY: MOV R7,#2H
+DELAY1: MOV R6,0ffH
+DELAY2: DJNZ R6,DELAY2
+	DJNZ R7,DELAY1
+	RET
+LOAD: PUSH A
+      PUSH B
+      MOV A,28h;flag
+      ANL A,#00100000B
+      JZ C1
+      mov a,26h;yearl
+      mov b,#0ah
+      div ab
+      MOV 79h,b;buffer1
+      MOV 7ah,a;BUFFER2
+      mov a,27h;yearh
+      mov b,#0ah
+      div ab
+      MOV 7bh,b
+      MOV 7ch,a
+      MOV 7dh,#0dh;;;;;;;;;;;;;;;;;;;;;;;;buffer5
+      mov 7eh,#0ah; buffer6 ,'y'
+      SJMP C_OVER
+C1:   MOV A,28h;flag
+      ANL A,#00010000B
+      JZ C2
+      MOV A,24h;date
+      MOV B,#0ah
+      DIV AB
+      MOV 79h,B;buffer1
+      MOV 7ah,A;BUFFER2
+      MOV A,25h;month
+      MOV B,#0ah
+      DIV AB
+      MOV 7bh,B
+      MOV 7ch,A
+       MOV 7dh,#0dh;;;;;;;;;;;;;;;;;;;;;;;;buffer5
+     mov 7eh,#0bh;buffer6 ;'d'
+      lJMP C_OVER
+C2:   MOV A,28h;flag
+      ANL A,#00001000B
+      JZ C3
+      MOV DPTR,#clock;闹铃区首地址
+      MOV A,2ah;item
+      RL A
+      add a,dpl
+      xch a,dpl
+      clr a
+      addc a,dph
+      xch a,dph
+      movx a,@dptr
+      MOV B,#0ah
+      DIV AB
+      MOV 79h,B;buffer1
+      MOV 7ah,A;BUFFER2
+      INC dptr
+      MOVX A,@DPTR
+      MOV B,#0ah
+      DIV AB
+      MOV 7bh,B
+      MOV 7ch,A
+      mov a,2ah;item
+      mov b,#0ah
+      div ab
+      MOV 7dh,b;;;;;;;;;;;;;;;;;;;;;;;;buffer5
+      mov 7eh,a;buffer6
+      sjmp c_over
+C3:   MOV A,21h;second
+      MOV B,#0ah
+      DIV AB
+      MOV 79h,B;buffer1
+      MOV 7ah,A;BUFFER2
+      MOV A,22h;minute
+      MOV B,#0ah
+      DIV AB
+      MOV 7bh,B
+      MOV 7ch,A
+      mov a,23h;hour
+      mov b,#0ah
+      div ab
+     MOV 7dh,b;;;;;;;;;;;;;;;;;;;;;;;;buffer5
+      mov 7eh,a
+C_OVER: POP B
+      POP A
+      RET
+;此程序时钟显示，支持
+core:    mov r7,a ;  寄存器a中放get_key的返回值，利用 r7中放键值
+         mov a,28h;flag; 添加一个处理
+         anl a,#00001000b
+         jz go_on
+         mov a,28h
+         anl a,#01000000h
+         jnz  go_on  
+	 cjne r7,#10h,go_on;'c'
+         lcall itemPP
+         ljmp core_end
+go_on:   mov a,28h;flag
+         anl a,#01000000b
+	 jnz shift1
+ shift0: mov a,28h;flag
+	 anl a,#00111000b
+         jnz ydc1
+	 cjne r7,#12h,a1        ; 'y'
+         orl 28h,#00100000b;flag
+     a1: cjne r7,#16h,a2        ; 'd'
+         orl 28h,#00010000b
+     a2: cjne r7,#10h,a3        ; 'c'
+         orl 28h,#00001000b;flag
+     a3: cjne r7,#17h,core_end   ;'shift'
+         orl 28h,#01000000b;flag
+         mov 29h,#1
+         ljmp core_end
+   ydc1: cjne r7,#12h,a4        ; 'y'
+         anl 28h,#11000111b;flag
+         orl 28h,#00100000b;flag
+     a4: cjne r7,#16h,a5        ; 'd'
+         anl 28h,#11000111b;flag
+         orl 28h,#00010000b;flag
+     a5: cjne r7,#10h,a6        ; 'c'
+         anl 28h,#11000111b;flag
+         orl 28h,#00001000b;flag
+     a6: cjne r7,#17h,a0  ; 'shift'
+         orl 28h,#01000000b;flag
+         mov 29h,#1;flash
+     a0: cjne r7,#0dh,core_end
+         anl 28h,#11000111B
+	 sjmp core_end
+ shift1: cjne r7,#0dh,a7        ; 'ok'
+          lcall deload
+         anl 28h,#10111111b;flag
+         mov 29h,#0;flash
+     a7: cjne r7,#0ch,a8        ; 'cancel'
+         anl 28h,#10111111b;flag 
+         mov 29h,#0;flash
+     a8: cjne r7,#17h,a9        ; 'shift'
+          lcall flashPP
+;          lcall deload 
+          sjmp core_end
+     a9: mov a,r7
+	 clr c
+         subb a,#0AH
+         jnC core_end; 键值有问题，不能按书上的用  
+          mov a,r7
+          mov 2bh,a 
+core_end:ret         
+ KEY_GET:    MOV A,R2
+              PUSH A
+              MOV A,R4
+              PUSH A
+   K_G2:     MOV R2, #0FEH
+             MOV R4,#00H
+   K_G3:     MOV DPTR,#6000H
+             MOV A,R2
+             MOVX  @DPTR,A
+             MOV A,P1
+             JB ACC.0,LINE1
+             MOV A,#00H
+             AJMP K_G_END
+  LINE1:    JB ACC.1,LINE2
+             MOV A,#08H
+             AJMP K_G_END
+  LINE2:    JB ACC.2,NEXT_COL
+             MOV A,#10H
+ K_G_END:    ADD  A,R4
+             LJMP  MODELST
+ NEXT_COL: INC R4
+        MOV A,R2
+        RL A
+        MOV R2,A
+        AJMP  K_G3
+  MODELST: MOV B,A
+           POP A
+           MOV R4,A
+           POP A
+           MOV R2,A
+           MOV A,B
+              RET
+DELOAD: PUSH A
+      PUSH B
+      MOV A,28h;flag
+      anl A,#00100000B
+      JZ D1
+      mov a,7ah;BUFFER2
+      mov b,#0ah
+      mul ab
+      add a,79h;buffer1
+      mov 26h,a ;yearl
+      MOV a,7ch
+      mov b,#0ah
+      mul ab
+      add a,7bh
+      mov 27h,a ;yearh
+      SJMP D_OVER
+D1:   MOV A,28h;flag
+      ANL A,#00010000B
+      JZ D2
+      MOV A,7ah;BUFFER2
+      MOV B,#0ah
+      MUL AB
+      ADD A,79h;buffer1
+      MOV 24h,A;date
+      MOV A,7ch
+      MOV B,#0ah
+      MUL AB
+      ADD A,7bh
+      MOV 25h,A;month
+      SJMP D_OVER
+D2:   MOV A,28h;flag
+      ANL A,#00001000B
+      JZ D3
+      MOV DPTR,#clock;闹铃区首地址
+      MOV A,2ah;item
+      RL  A
+      ADD A,DPL
+      XCH A,DPL
+      CLR A
+      ADDC A,DPH
+      XCH A,DPH
+      MOV A,7ah;BUFFER2
+      MOV B,#0ah
+      MUL AB
+      ADD A,79h;buffer1
+      MOVX @DPTR,A            ;error?
+      inc dptr
+      MOV A,7ch
+      MOV B,#0ah
+      MUL AB
+      ADD A,7bh
+      MOVX @DPTR,A
+      lJMP D_OVER
+D3:   MOV A,7ah;BUFFER2
+      MOV B,#0ah
+      MUL AB
+      ADD A,79h;buffer1
+      MOV 21h,A;second
+      MOV A,7ch
+      MOV B,#0ah
+      MUL AB
+      ADD A,7bh
+      MOV 22h,A;minute
+      mov a,7eh
+      mov b,0ah
+      mul ab
+      add a, 7dh
+      mov 23h,a
+D_OVER:POP B
+      POP A
+      RET
+key_scan:mov dptr,#6000h
+	 mov a,#0
+	 movx @dptr,a
+	 mov a,p1
+	 cpl a
+	 anl a,#7h
+	 RET
+ITEMPP:MOV A,2aH
+       CJNE A,#1eh,IT_1
+       MOV 2aH,#1
+       SJMP IT_END
+IT_1:  INC 2aH
+IT_END: RET
+FLASHPP:MOV A,28H
+      ANL A,#00111000B
+      JNZ FP1
+      MOV A,29h
+      CJNE A,#6,FP2
+      MOV 29h,#1
+       SJMP FLH_END
+FP2:   INC 29h
+      SJMP FLH_END
+FP1:   MOV A,29h
+      CJNE A,#4,FP3
+      MOV 29h,#1
+      sjmp flh_end
+FP3:   INC 29H
+FLH_END: RET
+mondify : mov a,28h
+          anl a,#01000000b
+          jz mon_end
+          mov r1, #78h
+          mov a,29h
+          add a,r1
+          mov r1,a
+          mov a,2bh
+          mov @r1,a
+mon_end :  ret
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+find:   mov r0,#0 
+FOR_FIND: mov dptr,#clock; CLOCK-2
+      INC r0;I
+      MOV A,r0;I
+      RL A
+      add a,dpl
+      xch a,dpl
+      clr a
+      addc a,dph
+      xch a,dph
+      MOVX A,@DPTR
+      CJNE A,22h,F_OVER;minute
+      INC  dptr
+      MOVX  A,@DPTR
+      CJNE A,23h,F_OVER;hour
+      mov a,#1
+      sjmp f_end
+      mov a,r0           ;error
+f_over: cjne a,#1eh,for_find;error?
+       mov a,#0
+f_end :  RET
+clocking:mov a,28h
+         anl a,#80h
+         jz clok_end
+         mov a,28h
+         anl a,#00000010b
+         jz clo_1
+         mov a,2ch
+         jnz clok_end
+          lcall turnoff
+          sjmp clok_end
+clo_1:    lcall find
+          jz clok_end
+          lcall turnon  
+clok_end:ret
+turnon:orl 28h,#00000010b
+       mov 2ch,#5
+       mov dptr,#0e002h
+       mov  a,#0ffh
+       movx @dptr,a
+       mov dptr,#0e001h
+       mov  a,#0ffh
+       movx @dptr,a
+       ret
+turnoff:anl 28h, #11111101b
+       mov  dptr,#0e003h
+       mov  a, #80h
+       movx @dptr, a       
+       ret
+days: db 0 
+clock:db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,43 @@
+
+#ifndef CLASSIFY_HELP
+
+#define CLASSIFY_HELP
+
+#define  ERR_MEM_ALLOC       119
+#define  ERR_FILE_OPEN       117
+#define  ERR_INVALID_HANDLE  115
+#define  ERR_INVALID_PARAM   113
+#define  ERR_BUFF_SMALL      111
+
+typedef struct _PeInfo{
+
+	DWORD  Machine;
+
+	DWORD  SectionNum;
+
+	DWORD  SizeOfCode;
+	DWORD  EntryOffset;
+	DWORD  SizeOfImage;
+	DWORD  SizeOfHeaders;
+
+	DWORD  VirtualAddress;
+	DWORD  RawDataSize;
+	DWORD  RawDataOffset;
+
+	DWORD  EntryFound;
+
+} PeInfo;
+
+void ShowResult();
+
+void MakePath( PCHAR des, const CHAR* src );
+void BrowseDir( PCHAR pName, void* para );
+
+
+BOOL VerifyPE( HANDLE hFile , PeInfo* pInfo );
+
+void EmptyFile();
+
+
+
+#endif

@@ -137,10 +137,10 @@ public class KWIC{
     Output output = new Output();
     
     String test = new String("zza zzb zzc zzd");
-    input.readLine( test, shifter);
+    //input.readLine( test, shifter);
     
-    alphabetizer.alpha(shifter);
-    output.print(alphabetizer);
+    //alphabetizer.alpha(shifter);
+    //output.print(alphabetizer);
 
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	boolean updated = false;
@@ -195,7 +195,7 @@ public class KWIC{
     }
 
     KWIC kwic = new KWIC();
-    kwic.execute(args[0]);
+    //kwic.execute(args[0]);
     kwic.interactive();
   }
 

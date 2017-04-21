@@ -1,0 +1,815 @@
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 34c
+98.890  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.890  	Default  	  	mgrGetObj = fedfe070
+98.890  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.890  	Default  	  	Handle =34c ; ReadCount = 0 ; WriteCount = 0
+98.890  	Default  	  	mgrFreeObj = fedfe070
+98.890  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 34c
+98.890  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.890  	Default  	  	mgrGetObj = fedfe070
+98.890  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.890  	Default  	  	Handle =34c ; ReadCount = 12 ; WriteCount = 0
+98.890  	Default  	  	mgrFreeObj = fedfe070
+98.890  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 180
+98.890  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.890  	Default  	  	mgrGetObj = fedfe070
+98.890  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.890  	Default  	  	Handle =180 ; ReadCount = 0 ; WriteCount = 0
+98.890  	Default  	  	mgrFreeObj = fedfe070
+98.890  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 180
+98.890  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.890  	Default  	  	mgrGetObj = fedfe070
+98.890  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.890  	Default  	  	Handle =180 ; ReadCount = 12 ; WriteCount = 0
+98.890  	Default  	  	mgrFreeObj = fedfe070
+98.890  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 5dc
+98.890  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.890  	Default  	  	mgrGetObj = fedfe070
+98.890  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.890  	Default  	  	Handle =5dc ; ReadCount = 0 ; WriteCount = 0
+98.890  	Default  	  	mgrFreeObj = fedfe070
+98.890  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 5dc
+98.890  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.890  	Default  	  	mgrGetObj = fedfe070
+98.890  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.890  	Default  	  	Handle =5dc ; ReadCount = 13 ; WriteCount = 0
+98.890  	Default  	  	mgrFreeObj = fedfe070
+98.890  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 494
+98.890  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.890  	Default  	  	mgrGetObj = fedfe070
+98.890  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.890  	Default  	  	Handle =494 ; ReadCount = 0 ; WriteCount = 0
+98.890  	Default  	  	mgrFreeObj = fedfe070
+98.890  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 494
+98.890  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.890  	Default  	  	mgrGetObj = fedfe070
+98.890  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.890  	Default  	  	Handle =494 ; ReadCount = 13 ; WriteCount = 0
+98.890  	Default  	  	mgrFreeObj = fedfe070
+98.890  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.890  	Default  	  	@suIoCreateFileEx : FileHandle = 8c0
+98.890  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.906  	Default  	  	mgrGetObj = fedfe070
+98.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.906  	Default  	  	Handle =8c0 ; ReadCount = 0 ; WriteCount = 0
+98.906  	Default  	  	mgrFreeObj = fedfe070
+98.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.906  	Default  	  	@suIoCreateFileEx : FileHandle = 8c0
+98.906  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.906  	Default  	  	mgrGetObj = fedfe070
+98.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.906  	Default  	  	Handle =8c0 ; ReadCount = 12 ; WriteCount = 0
+98.906  	Default  	  	mgrFreeObj = fedfe070
+98.906  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.906  	Default  	  	@suIoCreateFileEx : FileHandle = 5fc
+98.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.906  	Default  	  	mgrGetObj = fedfe070
+98.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.906  	Default  	  	Handle =5fc ; ReadCount = 0 ; WriteCount = 0
+98.906  	Default  	  	mgrFreeObj = fedfe070
+98.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.906  	Default  	  	@suIoCreateFileEx : FileHandle = 5fc
+98.906  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.906  	Default  	  	mgrGetObj = fedfe070
+98.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.906  	Default  	  	Handle =5fc ; ReadCount = 12 ; WriteCount = 0
+98.906  	Default  	  	mgrFreeObj = fedfe070
+98.906  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.921  	Default  	  	@suIoCreateFileEx : FileHandle = 8e0
+98.921  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.921  	Default  	  	mgrGetObj = fedfe070
+98.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.921  	Default  	  	Handle =8e0 ; ReadCount = 0 ; WriteCount = 0
+98.921  	Default  	  	mgrFreeObj = fedfe070
+98.921  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.921  	Default  	  	@suIoCreateFileEx : FileHandle = 8e0
+98.921  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.921  	Default  	  	mgrGetObj = fedfe070
+98.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.921  	Default  	  	Handle =8e0 ; ReadCount = 13 ; WriteCount = 0
+98.921  	Default  	  	mgrFreeObj = fedfe070
+98.921  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.921  	Default  	  	@suIoCreateFileEx : FileHandle = 560
+98.921  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.921  	Default  	  	mgrGetObj = fedfe070
+98.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.921  	Default  	  	Handle =560 ; ReadCount = 0 ; WriteCount = 0
+98.921  	Default  	  	mgrFreeObj = fedfe070
+98.921  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.921  	Default  	  	@suIoCreateFileEx : FileHandle = 560
+98.921  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.921  	Default  	  	mgrGetObj = fedfe070
+98.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.937  	Default  	  	Handle =560 ; ReadCount = 13 ; WriteCount = 0
+98.937  	Default  	  	mgrFreeObj = fedfe070
+98.937  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.937  	Default  	  	@suIoCreateFileEx : FileHandle = 58c
+98.937  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.937  	Default  	  	mgrGetObj = fedfe070
+98.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.937  	Default  	  	Handle =58c ; ReadCount = 0 ; WriteCount = 0
+98.937  	Default  	  	mgrFreeObj = fedfe070
+98.937  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.937  	Default  	  	@suIoCreateFileEx : FileHandle = 58c
+98.937  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.937  	Default  	  	mgrGetObj = fedfe070
+98.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.937  	Default  	  	Handle =58c ; ReadCount = 12 ; WriteCount = 0
+98.937  	Default  	  	mgrFreeObj = fedfe070
+98.937  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.937  	Default  	  	@suIoCreateFileEx : FileHandle = 8c8
+98.937  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.937  	Default  	  	mgrGetObj = fedfe070
+98.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.937  	Default  	  	Handle =8c8 ; ReadCount = 0 ; WriteCount = 0
+98.937  	Default  	  	mgrFreeObj = fedfe070
+98.937  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.937  	Default  	  	@suIoCreateFileEx : FileHandle = 8c8
+98.937  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.937  	Default  	  	mgrGetObj = fedfe070
+98.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.937  	Default  	  	Handle =8c8 ; ReadCount = 12 ; WriteCount = 0
+98.937  	Default  	  	mgrFreeObj = fedfe070
+98.937  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.953  	Default  	  	@suIoCreateFileEx : FileHandle = 5c4
+98.953  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.953  	Default  	  	mgrGetObj = fedfe070
+98.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.953  	Default  	  	Handle =5c4 ; ReadCount = 0 ; WriteCount = 0
+98.953  	Default  	  	mgrFreeObj = fedfe070
+98.953  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.953  	Default  	  	@suIoCreateFileEx : FileHandle = 5c4
+98.953  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.953  	Default  	  	mgrGetObj = fedfe070
+98.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.953  	Default  	  	Handle =5c4 ; ReadCount = 13 ; WriteCount = 0
+98.953  	Default  	  	mgrFreeObj = fedfe070
+98.953  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.953  	Default  	  	@suIoCreateFileEx : FileHandle = 8cc
+98.953  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.953  	Default  	  	mgrGetObj = fedfe070
+98.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.953  	Default  	  	Handle =8cc ; ReadCount = 0 ; WriteCount = 0
+98.953  	Default  	  	mgrFreeObj = fedfe070
+98.953  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.953  	Default  	  	@suIoCreateFileEx : FileHandle = 8cc
+98.953  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.953  	Default  	  	mgrGetObj = fedfe070
+98.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.953  	Default  	  	Handle =8cc ; ReadCount = 13 ; WriteCount = 0
+98.953  	Default  	  	mgrFreeObj = fedfe070
+98.953  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.968  	Default  	  	@suIoCreateFileEx : FileHandle = 498
+98.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.968  	Default  	  	mgrGetObj = fedfe070
+98.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.968  	Default  	  	Handle =498 ; ReadCount = 0 ; WriteCount = 0
+98.968  	Default  	  	mgrFreeObj = fedfe070
+98.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.968  	Default  	  	@suIoCreateFileEx : FileHandle = 498
+98.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.968  	Default  	  	mgrGetObj = fedfe070
+98.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.968  	Default  	  	Handle =498 ; ReadCount = 12 ; WriteCount = 0
+98.968  	Default  	  	mgrFreeObj = fedfe070
+98.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.968  	Default  	  	@suIoCreateFileEx : FileHandle = 34c
+98.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.968  	Default  	  	mgrGetObj = fedfe070
+98.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.968  	Default  	  	Handle =34c ; ReadCount = 0 ; WriteCount = 0
+98.968  	Default  	  	mgrFreeObj = fedfe070
+98.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.968  	Default  	  	@suIoCreateFileEx : FileHandle = 34c
+98.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.968  	Default  	  	mgrGetObj = fedfe070
+98.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.968  	Default  	  	Handle =34c ; ReadCount = 12 ; WriteCount = 0
+98.968  	Default  	  	mgrFreeObj = fedfe070
+98.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+98.968  	Default  	  	@suIoCreateFileEx : FileHandle = 450
+98.968  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.968  	Default  	  	mgrGetObj = fedfe070
+98.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.968  	Default  	  	Handle =450 ; ReadCount = 0 ; WriteCount = 0
+98.968  	Default  	  	mgrFreeObj = fedfe070
+98.968  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.968  	Default  	  	@suIoCreateFileEx : FileHandle = 450
+98.968  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.968  	Default  	  	mgrGetObj = fedfe070
+98.984  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.984  	Default  	  	Handle =450 ; ReadCount = 13 ; WriteCount = 0
+98.984  	Default  	  	mgrFreeObj = fedfe070
+98.984  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.984  	Default  	  	@suIoCreateFileEx : FileHandle = 5dc
+98.984  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.984  	Default  	  	mgrGetObj = fedfe070
+98.984  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.984  	Default  	  	Handle =5dc ; ReadCount = 0 ; WriteCount = 0
+98.984  	Default  	  	mgrFreeObj = fedfe070
+98.984  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+98.984  	Default  	  	@suIoCreateFileEx : FileHandle = 5dc
+98.984  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+98.984  	Default  	  	mgrGetObj = fedfe070
+98.984  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+98.984  	Default  	  	Handle =5dc ; ReadCount = 13 ; WriteCount = 0
+98.984  	Default  	  	mgrFreeObj = fedfe070
+98.984  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+100.906  	Default  	  	NotifyDriverStop
+100.906  	Default  	  	Device Closed
+100.906  	Default  	  	MajorFunction : 0x0
+100.906  	Default  	  	MinorFunction : 0x1
+100.906  	Default  	  	Flags : 0x2
+100.906  	Default  	  	Control : 0x3
+100.906  	Default  	  	Parameters : 0x4
+100.906  	Default  	  	Parameters.DeviceIoControl.OutputBufferLength : 0x4
+100.906  	Default  	  	Parameters.DeviceIoControl.InputBufferLength : 0x8
+100.906  	Default  	  	Parameters.DeviceIoControl.IoControlCode : 0xc
+100.906  	Default  	  	Parameters.DeviceIoControl.Type3InputBuffer : 0x10
+100.906  	Default  	  	DeviceObject : 0x14
+100.906  	Default  	  	FileObject : 0x18
+100.906  	Default  	  	CompletionRoutine : 0x1c
+100.906  	Default  	  	Context : 0x20
+100.906  	Default  	  	Type : 0x0
+100.906  	Default  	  	Size : 0x2
+100.906  	Default  	  	MdlAddress : 0x4
+100.906  	Default  	  	Flags : 0x8
+100.906  	Default  	  	AssociatedIrp : 0xc
+100.906  	Default  	  	ThreadListEntry : 0x10
+100.906  	Default  	  	IoStatus : 0x18
+100.906  	Default  	  	RequestorMode : 0x20
+100.906  	Default  	  	PendingReturned : 0x21
+100.906  	Default  	  	StackCount : 0x22
+100.906  	Default  	  	CurrentLocation : 0x23
+100.906  	Default  	  	Cancel : 0x24
+100.906  	Default  	  	CancelIrql : 0x25
+100.906  	Default  	  	ApcEnvironment : 0x26
+100.906  	Default  	  	AllocationFlags : 0x27
+100.906  	Default  	  	UserIosb : 0x28
+100.906  	Default  	  	UserEvent : 0x2c
+100.906  	Default  	  	Overlay : 0x30
+100.906  	Default  	  	CancelRoutine : 0x38
+100.906  	Default  	  	UserBuffer : 0x3c
+100.906  	Default  	  	Tail : 0x40
+100.906  	Default  	  	Tail.Overlay.ListEntry : 0x58
+100.906  	Default  	  	Tail.Overlay.CurrentStackLocation : 0x60
+100.906  	Default  	  	Tail.Overlay.OriginalFileObject : 0x64
+100.906  	Default  	  	@suIoCreateFileEx : FileHandle = 2c
+100.906  	Default  	  	\DosDevices\E:\supervise\log.txt
+100.906  	Default  	  	mgrGetObj = fedfe070
+100.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+100.906  	Default  	  	Handle =2c ; ReadCount = 1 ; WriteCount = 0
+100.906  	Default  	  	mgrFreeObj = fedfe070
+100.906  	Default  	  	\DosDevices\E:\supervise\log.txt
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 5fc
+108.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =5fc ; ReadCount = 0 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 5fc
+108.906  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =5fc ; ReadCount = 12 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 4a0
+108.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =4a0 ; ReadCount = 0 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 4a0
+108.906  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =4a0 ; ReadCount = 12 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 560
+108.906  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =560 ; ReadCount = 0 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 560
+108.906  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =560 ; ReadCount = 13 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 180
+108.906  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =180 ; ReadCount = 0 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 180
+108.906  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =180 ; ReadCount = 13 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.906  	Default  	  	@suIoCreateFileEx : FileHandle = 8f4
+108.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.906  	Default  	  	mgrGetObj = fedfe070
+108.906  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.906  	Default  	  	Handle =8f4 ; ReadCount = 0 ; WriteCount = 0
+108.906  	Default  	  	mgrFreeObj = fedfe070
+108.906  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.921  	Default  	  	@suIoCreateFileEx : FileHandle = 8f4
+108.921  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.921  	Default  	  	mgrGetObj = fedfe070
+108.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.921  	Default  	  	Handle =8f4 ; ReadCount = 12 ; WriteCount = 0
+108.921  	Default  	  	mgrFreeObj = fedfe070
+108.921  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.921  	Default  	  	@suIoCreateFileEx : FileHandle = 58c
+108.921  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.921  	Default  	  	mgrGetObj = fedfe070
+108.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.921  	Default  	  	Handle =58c ; ReadCount = 0 ; WriteCount = 0
+108.921  	Default  	  	mgrFreeObj = fedfe070
+108.921  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.921  	Default  	  	@suIoCreateFileEx : FileHandle = 58c
+108.921  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.921  	Default  	  	mgrGetObj = fedfe070
+108.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.937  	Default  	  	Handle =58c ; ReadCount = 12 ; WriteCount = 0
+108.937  	Default  	  	mgrFreeObj = fedfe070
+108.937  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.937  	Default  	  	@suIoCreateFileEx : FileHandle = 8fc
+108.937  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.937  	Default  	  	mgrGetObj = fedfe070
+108.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.937  	Default  	  	Handle =8fc ; ReadCount = 0 ; WriteCount = 0
+108.937  	Default  	  	mgrFreeObj = fedfe070
+108.937  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.937  	Default  	  	@suIoCreateFileEx : FileHandle = 8fc
+108.937  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.937  	Default  	  	mgrGetObj = fedfe070
+108.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.937  	Default  	  	Handle =8fc ; ReadCount = 13 ; WriteCount = 0
+108.937  	Default  	  	mgrFreeObj = fedfe070
+108.937  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.937  	Default  	  	@suIoCreateFileEx : FileHandle = 5c4
+108.937  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.937  	Default  	  	mgrGetObj = fedfe070
+108.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.937  	Default  	  	Handle =5c4 ; ReadCount = 0 ; WriteCount = 0
+108.937  	Default  	  	mgrFreeObj = fedfe070
+108.937  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.937  	Default  	  	@suIoCreateFileEx : FileHandle = 5c4
+108.937  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.937  	Default  	  	mgrGetObj = fedfe070
+108.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.937  	Default  	  	Handle =5c4 ; ReadCount = 13 ; WriteCount = 0
+108.937  	Default  	  	mgrFreeObj = fedfe070
+108.937  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.953  	Default  	  	@suIoCreateFileEx : FileHandle = 34c
+108.953  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.953  	Default  	  	mgrGetObj = fedfe070
+108.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.953  	Default  	  	Handle =34c ; ReadCount = 0 ; WriteCount = 0
+108.953  	Default  	  	mgrFreeObj = fedfe070
+108.953  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.953  	Default  	  	@suIoCreateFileEx : FileHandle = 34c
+108.953  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.953  	Default  	  	mgrGetObj = fedfe070
+108.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.953  	Default  	  	Handle =34c ; ReadCount = 12 ; WriteCount = 0
+108.953  	Default  	  	mgrFreeObj = fedfe070
+108.953  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.953  	Default  	  	@suIoCreateFileEx : FileHandle = 8c0
+108.953  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.953  	Default  	  	mgrGetObj = fedfe070
+108.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.953  	Default  	  	Handle =8c0 ; ReadCount = 0 ; WriteCount = 0
+108.953  	Default  	  	mgrFreeObj = fedfe070
+108.953  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.953  	Default  	  	@suIoCreateFileEx : FileHandle = 8c0
+108.953  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.953  	Default  	  	mgrGetObj = fedfe070
+108.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.953  	Default  	  	Handle =8c0 ; ReadCount = 12 ; WriteCount = 0
+108.953  	Default  	  	mgrFreeObj = fedfe070
+108.953  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.953  	Default  	  	@suIoCreateFileEx : FileHandle = 5dc
+108.953  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.953  	Default  	  	mgrGetObj = fedfe070
+108.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.953  	Default  	  	Handle =5dc ; ReadCount = 0 ; WriteCount = 0
+108.953  	Default  	  	mgrFreeObj = fedfe070
+108.953  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.953  	Default  	  	@suIoCreateFileEx : FileHandle = 5dc
+108.953  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.953  	Default  	  	mgrGetObj = fedfe070
+108.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.968  	Default  	  	Handle =5dc ; ReadCount = 13 ; WriteCount = 0
+108.968  	Default  	  	mgrFreeObj = fedfe070
+108.968  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.968  	Default  	  	@suIoCreateFileEx : FileHandle = 8e0
+108.968  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.968  	Default  	  	mgrGetObj = fedfe070
+108.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.968  	Default  	  	Handle =8e0 ; ReadCount = 0 ; WriteCount = 0
+108.968  	Default  	  	mgrFreeObj = fedfe070
+108.968  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.968  	Default  	  	@suIoCreateFileEx : FileHandle = 8e0
+108.968  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.968  	Default  	  	mgrGetObj = fedfe070
+108.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.968  	Default  	  	Handle =8e0 ; ReadCount = 13 ; WriteCount = 0
+108.968  	Default  	  	mgrFreeObj = fedfe070
+108.968  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.968  	Default  	  	@suIoCreateFileEx : FileHandle = 450
+108.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.968  	Default  	  	mgrGetObj = fedfe070
+108.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.968  	Default  	  	Handle =450 ; ReadCount = 0 ; WriteCount = 0
+108.968  	Default  	  	mgrFreeObj = fedfe070
+108.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.968  	Default  	  	@suIoCreateFileEx : FileHandle = 450
+108.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.968  	Default  	  	mgrGetObj = fedfe070
+108.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.968  	Default  	  	Handle =450 ; ReadCount = 12 ; WriteCount = 0
+108.968  	Default  	  	mgrFreeObj = fedfe070
+108.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.984  	Default  	  	@suIoCreateFileEx : FileHandle = 5fc
+108.984  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.984  	Default  	  	mgrGetObj = fedfe070
+108.984  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.984  	Default  	  	Handle =5fc ; ReadCount = 0 ; WriteCount = 0
+108.984  	Default  	  	mgrFreeObj = fedfe070
+108.984  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.984  	Default  	  	@suIoCreateFileEx : FileHandle = 5fc
+108.984  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.984  	Default  	  	mgrGetObj = fedfe070
+108.984  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.984  	Default  	  	Handle =5fc ; ReadCount = 12 ; WriteCount = 0
+108.984  	Default  	  	mgrFreeObj = fedfe070
+108.984  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+108.984  	Default  	  	@suIoCreateFileEx : FileHandle = 494
+108.984  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.984  	Default  	  	mgrGetObj = fedfe070
+108.984  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+108.984  	Default  	  	Handle =494 ; ReadCount = 0 ; WriteCount = 0
+108.984  	Default  	  	mgrFreeObj = fedfe070
+108.984  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+108.984  	Default  	  	@suIoCreateFileEx : FileHandle = 494
+108.984  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+108.984  	Default  	  	mgrGetObj = fedfe070
+109.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+109.000  	Default  	  	Handle =494 ; ReadCount = 13 ; WriteCount = 0
+109.000  	Default  	  	mgrFreeObj = fedfe070
+109.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+109.000  	Default  	  	@suIoCreateFileEx : FileHandle = 560
+109.000  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+109.000  	Default  	  	mgrGetObj = fedfe070
+109.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+109.000  	Default  	  	Handle =560 ; ReadCount = 0 ; WriteCount = 0
+109.000  	Default  	  	mgrFreeObj = fedfe070
+109.000  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+109.000  	Default  	  	@suIoCreateFileEx : FileHandle = 560
+109.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+109.000  	Default  	  	mgrGetObj = fedfe070
+109.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+109.000  	Default  	  	Handle =560 ; ReadCount = 13 ; WriteCount = 0
+109.000  	Default  	  	mgrFreeObj = fedfe070
+109.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+109.171  	Default  	  	@suIoCreateFileEx : FileHandle = 2c0
+109.171  	Default  	  	\??\PIPE\lsarpc
+109.171  	Default  	  	mgrGetObj = fedfe070
+109.171  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+109.171  	Default  	  	Handle =2c0 ; ReadCount = 0 ; WriteCount = 0
+109.171  	Default  	  	mgrFreeObj = fedfe070
+109.171  	Default  	  	\??\PIPE\lsarpc
+109.187  	Default  	  	@suIoCreateFileEx : FileHandle = 1fc
+109.187  	Default  	  	\DosDevices\C:\WINNT\system32\browseui.dll
+109.187  	Default  	  	mgrGetObj = fedfe070
+109.187  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+109.187  	Default  	  	Handle =1fc ; ReadCount = 77 ; WriteCount = 0
+109.187  	Default  	  	mgrFreeObj = fedfe070
+109.187  	Default  	  	\DosDevices\C:\WINNT\system32\browseui.dll
+109.187  	Default  	  	@suIoCreateFileEx : FileHandle = 1fc
+109.187  	Default  	  	\??\C:\WINNT\system32\browseui.dll
+109.187  	Default  	  	mgrGetObj = fedfe070
+109.187  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+109.187  	Default  	  	Handle =1fc ; ReadCount = 0 ; WriteCount = 0
+109.187  	Default  	  	mgrFreeObj = fedfe070
+109.187  	Default  	  	\??\C:\WINNT\system32\browseui.dll
+109.203  	Default  	  	@suIoCreateFileEx : FileHandle = 288
+109.203  	Default  	  	\DosDevices\C:\WINNT\system32\browseui.dll
+109.203  	Default  	  	mgrGetObj = fedfe070
+109.203  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+109.203  	Default  	  	Handle =288 ; ReadCount = 0 ; WriteCount = 0
+109.203  	Default  	  	mgrFreeObj = fedfe070
+109.203  	Default  	  	\DosDevices\C:\WINNT\system32\browseui.dll
+109.203  	Default  	  	@suIoCreateFileEx : FileHandle = 288
+109.203  	Default  	  	\??\C:\WINNT\system32\browseui.dll
+109.203  	Default  	  	mgrGetObj = fedfe070
+109.203  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+117.343  	Default  	  	@suIoCreateFileEx : FileHandle = 200
+117.343  	Default  	  	\??\PIPE\lsarpc
+117.343  	Default  	  	mgrGetObj = fedfe070
+117.343  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+117.343  	Default  	  	Handle =200 ; ReadCount = 0 ; WriteCount = 0
+117.343  	Default  	  	mgrFreeObj = fedfe070
+117.343  	Default  	  	\??\PIPE\lsarpc
+117.359  	Default  	  	@suIoCreateFileEx : FileHandle = 200
+117.359  	Default  	  	\DosDevices\C:\WINNT\system32\browseui.dll
+117.359  	Default  	  	mgrGetObj = fedfe070
+117.359  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+117.359  	Default  	  	Handle =200 ; ReadCount = 0 ; WriteCount = 0
+117.359  	Default  	  	mgrFreeObj = fedfe070
+117.359  	Default  	  	\DosDevices\C:\WINNT\system32\browseui.dll
+117.359  	Default  	  	@suIoCreateFileEx : FileHandle = 200
+117.359  	Default  	  	\??\C:\WINNT\system32\browseui.dll
+117.359  	Default  	  	mgrGetObj = fedfe070
+117.359  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+117.359  	Default  	  	Handle =200 ; ReadCount = 0 ; WriteCount = 0
+117.359  	Default  	  	mgrFreeObj = fedfe070
+117.359  	Default  	  	\??\C:\WINNT\system32\browseui.dll
+117.359  	Default  	  	@suIoCreateFileEx : FileHandle = 2a0
+117.359  	Default  	  	\DosDevices\C:\WINNT\system32\browseui.dll
+117.359  	Default  	  	mgrGetObj = fedfe070
+117.359  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+117.359  	Default  	  	Handle =2a0 ; ReadCount = 0 ; WriteCount = 0
+117.359  	Default  	  	mgrFreeObj = fedfe070
+117.359  	Default  	  	\DosDevices\C:\WINNT\system32\browseui.dll
+117.359  	Default  	  	@suIoCreateFileEx : FileHandle = 2a0
+117.359  	Default  	  	\??\C:\WINNT\system32\browseui.dll
+117.359  	Default  	  	mgrGetObj = fedfe070
+117.359  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 58c
+118.921  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =58c ; ReadCount = 0 ; WriteCount = 0
+118.921  	Default  	  	mgrFreeObj = fedfe070
+118.921  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 58c
+118.921  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =58c ; ReadCount = 12 ; WriteCount = 0
+118.921  	Default  	  	mgrFreeObj = fedfe070
+118.921  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 498
+118.921  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =498 ; ReadCount = 0 ; WriteCount = 0
+118.921  	Default  	  	mgrFreeObj = fedfe070
+118.921  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 498
+118.921  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =498 ; ReadCount = 12 ; WriteCount = 0
+118.921  	Default  	  	mgrFreeObj = fedfe070
+118.921  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 5c4
+118.921  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =5c4 ; ReadCount = 0 ; WriteCount = 0
+118.921  	Default  	  	mgrFreeObj = fedfe070
+118.921  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 5c4
+118.921  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =5c4 ; ReadCount = 13 ; WriteCount = 0
+118.921  	Default  	  	mgrFreeObj = fedfe070
+118.921  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 4a0
+118.921  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =4a0 ; ReadCount = 0 ; WriteCount = 0
+118.921  	Default  	  	mgrFreeObj = fedfe070
+118.921  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 4a0
+118.921  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =4a0 ; ReadCount = 13 ; WriteCount = 0
+118.921  	Default  	  	mgrFreeObj = fedfe070
+118.921  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.921  	Default  	  	@suIoCreateFileEx : FileHandle = 8c8
+118.921  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.921  	Default  	  	mgrGetObj = fedfe070
+118.921  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.921  	Default  	  	Handle =8c8 ; ReadCount = 0 ; WriteCount = 0
+118.937  	Default  	  	mgrFreeObj = fedfe070
+118.937  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.937  	Default  	  	@suIoCreateFileEx : FileHandle = 8c8
+118.937  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.937  	Default  	  	mgrGetObj = fedfe070
+118.937  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.937  	Default  	  	Handle =8c8 ; ReadCount = 12 ; WriteCount = 0
+118.937  	Default  	  	mgrFreeObj = fedfe070
+118.937  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.953  	Default  	  	@suIoCreateFileEx : FileHandle = 34c
+118.953  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.953  	Default  	  	mgrGetObj = fedfe070
+118.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.953  	Default  	  	Handle =34c ; ReadCount = 0 ; WriteCount = 0
+118.953  	Default  	  	mgrFreeObj = fedfe070
+118.953  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.953  	Default  	  	@suIoCreateFileEx : FileHandle = 34c
+118.953  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.953  	Default  	  	mgrGetObj = fedfe070
+118.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.953  	Default  	  	Handle =34c ; ReadCount = 12 ; WriteCount = 0
+118.953  	Default  	  	mgrFreeObj = fedfe070
+118.953  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.953  	Default  	  	@suIoCreateFileEx : FileHandle = 8cc
+118.953  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.953  	Default  	  	mgrGetObj = fedfe070
+118.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.953  	Default  	  	Handle =8cc ; ReadCount = 0 ; WriteCount = 0
+118.953  	Default  	  	mgrFreeObj = fedfe070
+118.953  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.953  	Default  	  	@suIoCreateFileEx : FileHandle = 8cc
+118.953  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.953  	Default  	  	mgrGetObj = fedfe070
+118.953  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.953  	Default  	  	Handle =8cc ; ReadCount = 13 ; WriteCount = 0
+118.953  	Default  	  	mgrFreeObj = fedfe070
+118.953  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.968  	Default  	  	@suIoCreateFileEx : FileHandle = 5dc
+118.968  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.968  	Default  	  	mgrGetObj = fedfe070
+118.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.968  	Default  	  	Handle =5dc ; ReadCount = 0 ; WriteCount = 0
+118.968  	Default  	  	mgrFreeObj = fedfe070
+118.968  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.968  	Default  	  	@suIoCreateFileEx : FileHandle = 5dc
+118.968  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.968  	Default  	  	mgrGetObj = fedfe070
+118.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.968  	Default  	  	Handle =5dc ; ReadCount = 13 ; WriteCount = 0
+118.968  	Default  	  	mgrFreeObj = fedfe070
+118.968  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.968  	Default  	  	@suIoCreateFileEx : FileHandle = 5fc
+118.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.968  	Default  	  	mgrGetObj = fedfe070
+118.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.968  	Default  	  	Handle =5fc ; ReadCount = 0 ; WriteCount = 0
+118.968  	Default  	  	mgrFreeObj = fedfe070
+118.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.968  	Default  	  	@suIoCreateFileEx : FileHandle = 5fc
+118.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.968  	Default  	  	mgrGetObj = fedfe070
+118.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.968  	Default  	  	Handle =5fc ; ReadCount = 12 ; WriteCount = 0
+118.968  	Default  	  	mgrFreeObj = fedfe070
+118.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.968  	Default  	  	@suIoCreateFileEx : FileHandle = 8f4
+118.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.968  	Default  	  	mgrGetObj = fedfe070
+118.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.968  	Default  	  	Handle =8f4 ; ReadCount = 0 ; WriteCount = 0
+118.968  	Default  	  	mgrFreeObj = fedfe070
+118.968  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.968  	Default  	  	@suIoCreateFileEx : FileHandle = 8f4
+118.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.968  	Default  	  	mgrGetObj = fedfe070
+118.968  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.968  	Default  	  	Handle =8f4 ; ReadCount = 12 ; WriteCount = 0
+118.968  	Default  	  	mgrFreeObj = fedfe070
+118.968  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+118.968  	Default  	  	@suIoCreateFileEx : FileHandle = 560
+118.968  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.968  	Default  	  	mgrGetObj = fedfe070
+118.984  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+118.984  	Default  	  	Handle =560 ; ReadCount = 0 ; WriteCount = 0
+118.984  	Default  	  	mgrFreeObj = fedfe070
+118.984  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+118.984  	Default  	  	@suIoCreateFileEx : FileHandle = 560
+118.984  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+118.984  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =560 ; ReadCount = 13 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 8fc
+119.000  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =8fc ; ReadCount = 0 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 8fc
+119.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =8fc ; ReadCount = 13 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 494
+119.000  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =494 ; ReadCount = 0 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 494
+119.000  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =494 ; ReadCount = 12 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 58c
+119.000  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =58c ; ReadCount = 0 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\DosDevices\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 58c
+119.000  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =58c ; ReadCount = 12 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\??\C:\Program Files\Common Files\Symantec Shared\ccEvtMgr.exe
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 180
+119.000  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =180 ; ReadCount = 0 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 180
+119.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =180 ; ReadCount = 13 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 5c4
+119.000  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =5c4 ; ReadCount = 0 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\DosDevices\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	@suIoCreateFileEx : FileHandle = 5c4
+119.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+119.000  	Default  	  	mgrGetObj = fedfe070
+119.000  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.000  	Default  	  	Handle =5c4 ; ReadCount = 13 ; WriteCount = 0
+119.000  	Default  	  	mgrFreeObj = fedfe070
+119.000  	Default  	  	\??\C:\WINNT\system32\SymNeti.dll
+119.093  	Default  	  	@suIoCreateFileEx : FileHandle = 2a8
+119.093  	Default  	  	\DosDevices\C:\WINNT\System32\docprop2.dll
+119.093  	Default  	  	mgrGetObj = fedfe070
+119.109  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.109  	Default  	  	Handle =2a8 ; ReadCount = 5b ; WriteCount = 0
+119.109  	Default  	  	mgrFreeObj = fedfe070
+119.109  	Default  	  	\DosDevices\C:\WINNT\System32\docprop2.dll
+119.109  	Default  	  	@suIoCreateFileEx : FileHandle = 2a8
+119.109  	Default  	  	\??\C:\WINNT\System32\docprop2.dll
+119.109  	Default  	  	mgrGetObj = fedfe070
+119.109  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.109  	Default  	  	Handle =2a8 ; ReadCount = 0 ; WriteCount = 0
+119.109  	Default  	  	mgrFreeObj = fedfe070
+119.109  	Default  	  	\??\C:\WINNT\System32\docprop2.dll
+119.109  	Default  	  	@suIoCreateFileEx : FileHandle = 25c
+119.109  	Default  	  	\DosDevices\C:\WINNT\System32\docprop2.dll
+119.109  	Default  	  	mgrGetObj = fedfe070
+119.109  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.109  	Default  	  	Handle =25c ; ReadCount = 0 ; WriteCount = 0
+119.109  	Default  	  	mgrFreeObj = fedfe070
+119.109  	Default  	  	\DosDevices\C:\WINNT\System32\docprop2.dll
+119.109  	Default  	  	@suIoCreateFileEx : FileHandle = 25c
+119.109  	Default  	  	\??\C:\WINNT\System32\docprop2.dll
+119.109  	Default  	  	mgrGetObj = fedfe070
+119.109  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+119.109  	Default  	  	Handle =25c ; ReadCount = 0 ; WriteCount = 0
+119.109  	Default  	  	mgrFreeObj = fedfe070
+119.109  	Default  	  	\??\C:\WINNT\System32\docprop2.dll
+119.109  	Default  	  	@suIoCreateFileEx : FileHandle = 2a8
+119.109  	Default  	  	\DosDevices\C:\WINNT\System32\WINMM.DLL
+119.109  	Default  	  	mgrGetObj = fedfe070
+119.125  	Default  	  	mgrGetMgrObjByHandle =fedfe070
+   	Monitor  	  	 -- end -- 

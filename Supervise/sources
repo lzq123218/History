@@ -1,0 +1,17 @@
+TARGETNAME=supervise
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+MSC_WARNING_LEVEL=/W3
+
+
+SOURCES= entry.c     \
+	 openclose.c \
+	 ioctl.c     \
+         proc.c      \
+         utility.c   \
+         supobj.c    \
+         ntincpt.c   \
+         ioincpt.c   \
+         zwincpt.c   \
+         cache.c
